@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fil-Sino - Manpower Services Inc.</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- Meta tags for SEO -->
+    <meta
+      name="description"
+      content="Filsino - Innovative digital solutions for web development, mobile apps, cloud services, and more. Transform your business with cutting-edge technology."
+    />
+    <meta
+      name="keywords"
+      content="web development, mobile apps, cloud solutions, digital transformation, innovation"
+    />
+    <meta name="author" content="Filsino" />
+
+    <!-- Open Graph tags -->
+    <meta
+      property="og:title"
+      content="Filsino - Innovative Digital Solutions"
+    />
+    <meta
+      property="og:description"
+      content="Transform your business with cutting-edge digital solutions"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://filsino.com" />
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Loading Overlay -->
+    <div id="filsino-loader" class="filsino-loader-overlay">
+      <div class="filsino-loader-content">
+        <img
+          src="assets/images/Filsino_Logo_front.png"
+          alt="Filsino Logo"
+          class="filsino-loader-logo"
+        />
+        <div class="filsino-bars-loader">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </div>
+    </div>
+    <script>
+      // Loader stays for at least 2 seconds
+      window.addEventListener("load", function () {
+        const loader = document.getElementById("filsino-loader");
+        const minDuration = 2000;
+        const start = performance.timing.navigationStart || Date.now();
+        const now = Date.now();
+        const elapsed = now - start;
+        const remaining = Math.max(0, minDuration - elapsed);
+        setTimeout(() => {
+          if (loader) {
+            loader.classList.add("fade-out");
+            setTimeout(() => (loader.style.display = "none"), 600);
+          }
+        }, remaining);
+      });
+    </script>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="navbar-flex">
+          <!-- Logo -->
+          <div class="logo-simple">
+            <img src="assets/images/Filsino_Logo_front.png" class="logo-img" />
+            <div class="logo-text">
+              <span class="logo-title">FIL-SINO</span>
+              <div class="logo-sub">
+                <div>MANPOWER SERVICES INCl.</div>
+                <div>POEA Lic. No. 191-LB-070518-R</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="navbar-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="partners.html" class="nav-link">Our Partners</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="mobile-menu-btn-wrap">
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+              <svg
+                class="icon-menu"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="container">
+          <div class="mobile-menu-links">
+            <a href="#home" class="nav-link-mobile">Home</a>
+            <a href="#about" class="nav-link-mobile">About</a>
+            <a href="#services" class="nav-link-mobile">Services</a>
+            <a href="portfolio.html" class="nav-link-mobile">Portfolio</a>
+            <a href="#contact" class="nav-link-mobile">Contact</a>
+            <button class="btn-primary btn-block">Get Quote</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+
+      <section id="home" class="hero-section">
+        <img src="assets/images/Filsino_bg.png" alt="" class="hero-bg" />
+        <!-- Animated background elements -->
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
+        </div>
+
+        <div class="hero-content">
+          <!-- Logo and Title Section -->
+          <div class="hero-title-row">
+            <div class="hero-logo-3d hero-logo-margin">
+              <!-- True cylindrical 3D structure with proper face images -->
+              <div class="hero-3d-container">
+                <!-- Front face -->
+                <div class="hero-face hero-face-front">
+                  <img
+                    src="assets/images/Filsino_Logo_front.png"
+                    class="hero-logo-img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-title-text">
+              <h1 class="hero-title-main">
+                <span id="heroText">FIL-SINO</span>
+              </h1>
+              <div class="hero-title-sub">
+                <div>MANPOWER SERVICES INC.</div>
+                <div>POEA Lic. No. 191-LB-070518-R</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-btn-row">
+            <button class="btn-primary">
+              Get Started
+              <svg
+                class="btn-icon-arrow"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                ></path>
+              </svg>
+            </button>
+            <button class="btn-secondary">Learn More</button>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+          <svg
+            class="scroll-indicator-icon"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-header">
+            <h2 class="about-title">About FIL-SINO Manpower</h2>
+            <p class="about-subtitle">
+              Your trusted partner in finding quality employment opportunities
+              abroad since 1993. Connecting dreams to global opportunities with
+              excellence and integrity.
+            </p>
+          </div>
+
+          <!-- Horizontal Scrollable Carousel -->
+          <div class="about-carousel-container">
+            <div class="about-carousel" id="destinationsCarousel">
+              <!-- Taiwan Card -->
+              <div class="about-card" data-destination="taiwan">
+                <div class="about-card-image">
+                  <img src="assets/images/Our_Company.jpg" alt="Taiwan" />
+                  <div class="about-card-overlay">
+                    <div class="about-card-stats">
+                      <span class="about-card-number">CLICK</span>
+                      <span class="about-card-label">To Read More</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-card-content">
+                  <h3 class="about-card-name">Our Company</h3>
+                  <p class="about-card-title">Manpower Services</p>
+                  <div class="about-card-tags">
+                    <span class="about-tag">Top Destination</span>
+                    <span class="about-tag">High Demand</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hong Kong Card -->
+              <div class="about-card" data-destination="hongkong">
+                <div class="about-card-image">
+                  <img src="assets/images/target(1).png" alt="Hong Kong" />
+                  <div class="about-card-overlay">
+                    <div class="about-card-stats">
+                      <span class="about-card-number">CLICK</span>
+                      <span class="about-card-label">To Read More</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-card-content">
+                  <h3 class="about-card-name">Our Mission</h3>
+                  <p class="about-card-title">Company's Mission</p>
+                  <div class="about-card-tags">
+                    <span class="about-tag">Financial Hub</span>
+                    <span class="about-tag">Service Industry</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Canada Card -->
+              <div class="about-card" data-destination="canada">
+                <div class="about-card-image">
+                  <img
+                    src="assets/images/filsino_gallery/image_3.jpg"
+                    alt="Canada"
+                  />
+                  <div class="about-card-overlay">
+                    <div class="about-card-stats">
+                      <span class="about-card-number">CLICK</span>
+                      <span class="about-card-label">To Read More</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-card-content">
+                  <h3 class="about-card-name">Our Vision</h3>
+                  <p class="about-card-title">Company's Vision</p>
+                  <div class="about-card-tags">
+                    <span class="about-tag">Immigration Path</span>
+                    <span class="about-tag">High Quality</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Japan Card -->
+              <div class="about-card" data-destination="japan">
+                <div class="about-card-image">
+                  <img
+                    src="assets/images/filsino_gallery/image_4.jpg"
+                    alt="Japan"
+                  />
+                  <div class="about-card-overlay">
+                    <div class="about-card-stats">
+                      <span class="about-card-number">CLICK</span>
+                      <span class="about-card-label">To Read More</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-card-content">
+                  <h3 class="about-card-name">Gallery</h3>
+                  <p class="about-card-title">Company Gallery</p>
+                  <div class="about-card-tags">
+                    <span class="about-tag">Tech Skills</span>
+                    <span class="about-tag">Cultural Exchange</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Vietnam Card -->
+              <div class="about-card" data-destination="vietnam">
+                <div class="about-card-image">
+                  <img
+                    src="assets/images/filsino_gallery/image_5.jpg"
+                    alt="Vietnam"
+                  />
+                  <div class="about-card-overlay">
+                    <div class="about-card-stats">
+                      <span class="about-card-number">CLICK</span>
+                      <span class="about-card-label">To Read More</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-card-content">
+                  <h3 class="about-card-name">Awards</h3>
+                  <p class="about-card-title">Awards & Certificates</p>
+                  <div class="about-card-tags">
+                    <span class="about-tag">Growing Market</span>
+                    <span class="about-tag">Opportunities</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Libya Card -->
+              <div class="about-card" data-destination="libya">
+                <div class="about-card-image">
+                  <img
+                    src="assets/images/filsino_gallery/image_6.jpg"
+                    alt="Libya"
+                  />
+                  <div class="about-card-overlay">
+                    <div class="about-card-stats">
+                      <span class="about-card-number">CLICK</span>
+                      <span class="about-card-label">To Read More</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="about-card-content">
+                  <h3 class="about-card-name">Policy</h3>
+                  <p class="about-card-title">Company Policy</p>
+                  <div class="about-card-tags">
+                    <span class="about-tag">Energy Sector</span>
+                    <span class="about-tag">Specialized Work</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Carousel Controls -->
+            <div class="about-carousel-controls">
+              <button
+                class="about-carousel-btn prev-btn"
+                onclick="scrollCarousel('prev')"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M15 18l-6-6 6-6" />
+                </svg>
+              </button>
+              <button
+                class="about-carousel-btn next-btn"
+                onclick="scrollCarousel('next')"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M9 18l6-6-6-6" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Company Overview Cards -->
+          <div class="about-overview-section">
+            <div class="about-overview-grid">
+              <!-- Our Company Card -->
+              <div
+                class="about-overview-card"
+                data-card="company"
+                onclick="openSubCard('company')"
+              >
+                <div class="about-overview-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 14l9-5-9-5-9 5 9 5z" />
+                    <path
+                      d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"
+                    />
+                  </svg>
+                </div>
+                <h3>Our Company</h3>
+                <p>
+                  Established in 1993, we are one of the top 4 recruitment
+                  agencies deploying workers to Taiwan with over 70,000
+                  successful placements.
+                </p>
+                <div class="about-overview-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M7 17l9.2-9.2M17 17V7H7" />
+                  </svg>
+                </div>
+              </div>
+              <!-- Our Mission Card -->
+              <div
+                class="about-overview-card"
+                data-card="mission"
+                onclick="openSubCard('mission')"
+              >
+                <div class="about-overview-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>
+                </div>
+                <h3>Our Mission</h3>
+                <p>
+                  To improve lives by providing quality employment abroad and
+                  satisfy principals with highly competent, hardworking workers.
+                </p>
+                <div class="about-overview-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M7 17l9.2-9.2M17 17V7H7" />
+                  </svg>
+                </div>
+              </div>
+              <!-- Our Vision Card -->
+              <div
+                class="about-overview-card"
+                data-card="vision"
+                onclick="openSubCard('vision')"
+              >
+                <div class="about-overview-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path
+                      d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"
+                    />
+                  </svg>
+                </div>
+                <h3>Our Vision</h3>
+                <p>
+                  Continued growth and expansion towards greater heights,
+                  exploring new markets while maintaining excellence in service
+                  quality.
+                </p>
+                <div class="about-overview-arrow">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                    <path d="M7 17l9.2-9.2M17 17V7H7" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Overlay -->
+        <div
+          id="modal-overlay"
+          class="modal-overlay"
+          onclick="closeSubCard()"
+        ></div>
+
+        <!-- Sub Cards -->
+        <div id="sub-card-company" class="sub-card">
+          <div class="sub-card-header">
+            <h3 class="text-2xl font-bold text-gray-800">Our Company</h3>
+            <button class="close-btn" onclick="closeSubCard()">×</button>
+          </div>
+          <div class="sub-card-content">
+            <p class="text-gray-600">
+              IS a land-based recruitment agency which was established by men
+              with successful track records in business management and licensed
+              on November 9, 1993. Today, the company employs 26 full-time
+              personnel trained in the field of human resource development and
+              operates from a modern, well equipped office in Paranaque City,
+              Manila. From the time of its organization, the company has been
+              active in the manpower industry with its focus on the deployment
+              of skilled, semi-skilled and household workers to Taiwan. To date,
+              it handles the manpower requirements of at least 350 principals
+              and employers in Taiwan, Hong Kong, Canada, Vietnam, Libya and
+              Japan. Since its establishment, Fil-Sino Manpower Services
+              Incorporated has deployed seventy thousand (70,000) workers or an
+              average of more than two thousand five hundred (2,500) workers
+              annually. Fil-Sino Manpower Services Incorporated continues to
+              maintain its position as one of the Top 4 agencies deploying
+              workers to Taiwan.
+            </p>
+          </div>
+        </div>
+
+        <div id="sub-card-mission" class="sub-card">
+          <div class="sub-card-header">
+            <h3 class="text-2xl font-bold text-gray-800">Our Mission</h3>
+            <button class="close-btn" onclick="closeSubCard()">×</button>
+          </div>
+          <div class="sub-card-content">
+            <p class="text-gray-600">
+              Fil-Sino Manpower Services Incorporated focuses its energies and
+              resources to improve the lives of people by providing them
+              employment abroad and to fully satisfy the requirements of
+              principals for properly selected, highly competent, and
+              hardworking workers at the quickest possible time. We will build a
+              corporate structure where all our personnel will harness and
+              develop their skills towards attaining a common goal . . .
+              Excellence!
+            </p>
+          </div>
+        </div>
+
+        <div id="sub-card-vision" class="sub-card">
+          <div class="sub-card-header">
+            <h3 class="text-2xl font-bold text-gray-800">Our Vision</h3>
+            <button class="close-btn" onclick="closeSubCard()">×</button>
+          </div>
+          <div class="sub-card-content">
+            <p class="text-gray-600">
+              We envision continued growth and expansion towards greater
+              heights. We shall seek to explore, discover and develop new
+              markets that would benefit from the quality of our service. We
+              shall strive to further gain a bigger share in our existing
+              markets through the implementation of cost effective strategies
+              and techniques. We shall continue to improve on the quality of
+              service that we provide to ensure that all the customers we serve
+              shall be satisfied. We shall continue to adopt and implement
+              policies and procedures that will guarantee that goals are
+              reachable and success is attainable in our line of business.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery-section">
+        <div class="container">
+          <div class="gallery-header">
+            <h2 class="gallery-title">Gallery</h2>
+            <div class="gallery-divider"></div>
+          </div>
+          <div class="gallery-grid">
+            <!-- Gallery Items -->
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_1.jpg"
+                alt="Gallery Image 1"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_2.jpg"
+                alt="Gallery Image 2"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_3.jpg"
+                alt="Gallery Image 3"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_4.jpg"
+                alt="Gallery Image 4"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_5.jpg"
+                alt="Gallery Image 5"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_6.jpg"
+                alt="Gallery Image 6"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_7.jpg"
+                alt="Gallery Image 7"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_8.jpg"
+                alt="Gallery Image 8"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_9.jpg"
+                alt="Gallery Image 9"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_10.jpg"
+                alt="Gallery Image 10"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_11.jpg"
+                alt="Gallery Image 11"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_12.jpg"
+                alt="Gallery Image 12"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_13.jpg"
+                alt="Gallery Image 13"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_14.jpg"
+                alt="Gallery Image 14"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_15.jpg"
+                alt="Gallery Image 15"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_16.png"
+                alt="Gallery Image 16"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_17.png"
+                alt="Gallery Image 17"
+                class="gallery-img"
+              />
+            </div>
+            <div class="gallery-item">
+              <img
+                src="assets/images/filsino_gallery/image_18.png"
+                alt="Gallery Image 18"
+                class="gallery-img"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services-section">
+        <div class="container">
+          <div class="services-header">
+            <h2 class="services-title">Our Services</h2>
+            <div class="services-divider"></div>
+          </div>
+          <div class="services-grid">
+            <!-- Web Development -->
+            <div class="service-card">
+              <div class="service-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Web Development</h3>
+              <p class="service-desc">
+                Custom web applications built with modern technologies and
+                responsive design.
+              </p>
+            </div>
+            <!-- Mobile Apps -->
+            <div class="service-card">
+              <div class="service-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Mobile Apps</h3>
+              <p class="service-desc">
+                Native and cross-platform mobile applications for iOS and
+                Android.
+              </p>
+            </div>
+            <!-- Data Analytics -->
+            <div class="service-card">
+              <div class="service-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Data Analytics</h3>
+              <p class="service-desc">
+                Transform your data into actionable insights with advanced
+                analytics.
+              </p>
+            </div>
+            <!-- Cloud Solutions -->
+            <div class="service-card">
+              <div class="service-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Cloud Solutions</h3>
+              <p class="service-desc">
+                Scalable cloud infrastructure and migration services for your
+                business.
+              </p>
+            </div>
+            <!-- Cybersecurity -->
+            <div class="service-card">
+              <div class="service-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Cybersecurity</h3>
+              <p class="service-desc">
+                Comprehensive security solutions to protect your digital assets.
+              </p>
+            </div>
+            <!-- Performance Optimization -->
+            <div class="service-card">
+              <div class="service-icon">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 10V3L4 14h7v7l9-11h-7z"
+                  ></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Performance Optimization</h3>
+              <p class="service-desc">
+                Optimize your systems for maximum performance and efficiency.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="contact-header">
+            <h2 class="contact-title">Get In Touch</h2>
+            <div class="contact-divider"></div>
+            <p class="contact-desc">
+              Ready to start your next project? Let's discuss how we can help
+              bring your vision to life.
+            </p>
+          </div>
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contactForm">
+              <div class="contact-form-row">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="form-input"
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="email">Email</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    class="form-input"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  class="form-input"
+                />
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="form-input"
+                ></textarea>
+              </div>
+              <div class="contact-btn-row">
+                <button type="submit" class="btn-primary">
+                  Send Message
+                  <svg
+                    class="btn-icon-arrow"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-grid">
+          <!-- Company Info -->
+          <div class="footer-company">
+            <h3 class="footer-logo">Fil-Sino</h3>
+            <p class="footer-desc">
+              We are dedicated to providing innovative digital solutions that
+              transform businesses and drive success in the modern digital
+              landscape.
+            </p>
+            <div class="footer-socials">
+              <a href="#" class="social-link">...existing code...</a>
+              <a href="#" class="social-link">...existing code...</a>
+              <a href="#" class="social-link">...existing code...</a>
+              <a href="#" class="social-link">...existing code...</a>
+            </div>
+          </div>
+          <!-- Quick Links -->
+          <div class="footer-links">
+            <h4 class="footer-title">Quick Links</h4>
+            <ul class="footer-list">
+              <li><a href="#about" class="footer-link">About Us</a></li>
+              <li><a href="#services" class="footer-link">Services</a></li>
+              <li>
+                <a href="portfolio.html" class="footer-link">Portfolio</a>
+              </li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+              <li><a href="blog.html" class="footer-link">Blog</a></li>
+            </ul>
+          </div>
+          <!-- Services -->
+          <div class="footer-links">
+            <h4 class="footer-title">Services</h4>
+            <ul class="footer-list">
+              <li><a href="#" class="footer-link">Web Development</a></li>
+              <li><a href="#" class="footer-link">Mobile Apps</a></li>
+              <li><a href="#" class="footer-link">Cloud Solutions</a></li>
+              <li><a href="#" class="footer-link">Data Analytics</a></li>
+              <li><a href="#" class="footer-link">Cybersecurity</a></li>
+            </ul>
+          </div>
+        </div>
+        <!-- Newsletter Signup -->
+        <div class="footer-newsletter">
+          <div class="footer-newsletter-inner">
+            <h4 class="footer-title">Stay Updated</h4>
+            <p class="footer-newsletter-desc">
+              Subscribe to our newsletter for the latest updates and insights.
+            </p>
+            <form class="footer-newsletter-form" id="newsletterForm">
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="footer-newsletter-input"
+              />
+              <button type="submit" class="btn-primary-small">Subscribe</button>
+            </form>
+          </div>
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright">
+          <p>
+            &copy; 2025 Filsino. All rights reserved.
+            <span class="footer-sep">|</span>
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <span class="footer-sep">|</span>
+            <a href="#" class="footer-link">Terms of Service</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top">
+      <svg
+        width="24"
+        height="24"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        ></path>
+      </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- HTML Contact Form Handler -->
+    <script>
+      // Simple contact form handler for HTML version
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const submitBtn = this.querySelector('button[type="submit"]');
+          const originalText = submitBtn.innerHTML;
+
+          // Show loading state
+          submitBtn.innerHTML = `
+                <span class="loading-spinner"></span>
+                Sending...
+            `;
+          submitBtn.disabled = true;
+
+          // Simulate form submission (for demo purposes)
+          setTimeout(() => {
+            showNotification(
+              "Thank you for your message! We will get back to you soon.",
+              "success"
+            );
+            this.reset();
+
+            // Reset button
+            submitBtn.innerHTML = originalText;
+            submitBtn.disabled = false;
+          }, 2000);
+        });
+
+      // Newsletter form handler
+      document
+        .getElementById("newsletterForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const email = this.querySelector('input[type="email"]').value;
+          if (email) {
+            showNotification(
+              "Thank you for subscribing to our newsletter!",
+              "success"
+            );
+            this.reset();
+          }
+        });
+
+      // Simple notification function for HTML version
+      function showNotification(message, type = "info") {
+        const notification = document.createElement("div");
+        let bgColor = "#3b82f6"; // blue
+        if (type === "success") bgColor = "#16a34a"; // green
+        if (type === "error") bgColor = "#ef4444"; // red
+        
+        notification.style.cssText = `
+          position: fixed;
+          top: 1rem;
+          right: 1rem;
+          z-index: 50;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+          background-color: ${bgColor};
+          color: white;
+          transform: translateX(100%);
+          transition: transform 0.3s ease;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          max-width: 400px;
+        `;
+
+        notification.innerHTML = `
+          <span>${message}</span>
+          <button onclick="this.parentElement.remove()" style="background: none; border: none; color: white; cursor: pointer; padding: 0.25rem;">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        `;
+
+        document.body.appendChild(notification);
+
+        // Slide in
+        setTimeout(() => {
+          notification.style.transform = 'translateX(0)';
+        }, 100);
+
+        // Auto remove after 5 seconds
+        setTimeout(() => {
+          notification.style.transform = 'translateX(100%)';
+          setTimeout(() => {
+            notification.remove();
+          }, 300);
+        }, 5000);
+      }
+    </script>
+  </body>
+</html>

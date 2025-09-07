@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fil-Sino - Manpower Services Inc.</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+
+    <!-- Meta tags for SEO -->
+    <meta
+      name="description"
+      content="Filsino - Professional manpower services connecting Filipino talent with global opportunities. POEA licensed recruitment agency."
+    />
+    <meta
+      name="keywords"
+      content="manpower services, overseas employment, POEA licensed, Filipino workers, international recruitment"
+    />
+    <meta name="author" content="Filsino" />
+
+    <!-- Open Graph tags -->
+    <meta property="og:title" content="Filsino - Manpower Services Inc." />
+    <meta
+      property="og:description"
+      content="Professional manpower services connecting Filipino talent with global opportunities"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://filsino.com" />
+
+    <!-- Preload critical fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Loading Overlay -->
+    <div id="filsino-loader" class="filsino-loader-overlay">
+      <div class="filsino-loader-content">
+        <img
+          src="assets/images/Filsino_Logo_front.png"
+          alt="Filsino Logo"
+          class="filsino-loader-logo"
+        />
+        <div class="filsino-bars-loader"></div>
+      </div>
+    </div>
+    <script>
+      // Loader stays for at least 2 seconds
+      window.addEventListener("load", function () {
+        const loader = document.getElementById("filsino-loader");
+        const minDuration = 2000;
+        const start = performance.timing.navigationStart || Date.now();
+        const now = Date.now();
+        const elapsed = now - start;
+        const remaining = Math.max(0, minDuration - elapsed);
+        setTimeout(() => {
+          if (loader) {
+            loader.style.opacity = "0";
+            setTimeout(() => (loader.style.display = "none"), 600);
+          }
+        }, remaining);
+      });
+    </script>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="navbar-flex">
+          <!-- Logo -->
+          <div class="logo-simple">
+            <img src="assets/images/Filsino_Logo_front.png" class="logo-img" />
+            <div class="logo-text">
+              <span class="logo-title">FIL-SINO</span>
+              <div class="logo-sub">
+                <div>MANPOWER SERVICES INC.</div>
+                <div>POEA Lic. No. 191-LB-070518-R</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Desktop Navigation -->
+          <div class="navbar-links">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#services" class="nav-link">Services</a>
+            <a href="partners.html" class="nav-link">Our Partners</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <div class="mobile-menu-btn-wrap">
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation -->
+      <div class="mobile-menu" id="mobile-menu">
+        <div class="container">
+          <div class="mobile-menu-links">
+            <a href="#home" class="nav-link-mobile">Home</a>
+            <a href="#about" class="nav-link-mobile">About</a>
+            <a href="#services" class="nav-link-mobile">Services</a>
+            <a href="partners.html" class="nav-link-mobile">Our Partners</a>
+            <a href="#contact" class="nav-link-mobile">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <img src="assets/images/Filsino_bg.png" alt="" class="hero-bg" />
+
+        <!-- Animated background elements -->
+        <div class="floating-shapes">
+          <div class="shape shape-1"></div>
+          <div class="shape shape-2"></div>
+          <div class="shape shape-3"></div>
+          <div class="shape shape-4"></div>
+        </div>
+
+        <div class="hero-content">
+          <!-- Logo and Title Section -->
+          <div class="hero-title-row">
+            <div class="hero-logo-3d">
+              <!-- 3D Logo Container -->
+              <div class="hero-3d-container">
+                <div class="hero-face hero-face-front">
+                  <img
+                    src="assets/images/Filsino_Logo_front.png"
+                    alt="Filsino Logo Front"
+                  />
+                </div>
+                <div class="hero-face hero-face-back">
+                  <img
+                    src="assets/images/Filsino_Logo_back.png"
+                    alt="Filsino Logo Back"
+                  />
+                </div>
+                <div class="hero-face hero-face-left">
+                  <img
+                    src="assets/images/Filsino_Logo_left.png"
+                    alt="Filsino Logo Left"
+                  />
+                </div>
+                <div class="hero-face hero-face-right">
+                  <img
+                    src="assets/images/Filsino_Logo_right.png"
+                    alt="Filsino Logo Right"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="hero-title-text">
+              <h1 class="hero-title-main">
+                <span id="heroText">FIL-SINO</span>
+              </h1>
+              <div class="hero-title-sub">
+                <div>MANPOWER SERVICES INC.</div>
+                <div>POEA Lic. No. 191-LB-070518-R</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-btn-row">
+            <a href="#contact" class="btn-primary">
+              Get Started
+              <svg
+                class="btn-icon-arrow"
+                width="20"
+                height="20"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M13 7l5 5m0 0l-5 5m5-5H6"
+                ></path>
+              </svg>
+            </a>
+            <a href="#about" class="btn-secondary">Learn More</a>
+          </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="scroll-indicator">
+          <svg
+            class="scroll-indicator-icon"
+            width="24"
+            height="24"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M19 14l-7 7m0 0l-7-7m7 7V3"
+            ></path>
+          </svg>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="about-section">
+        <div class="container">
+          <div class="about-overview">
+            <!-- Company Card -->
+            <div
+              class="about-overview-card animate-on-scroll"
+              onclick="openSubCard('company')"
+            >
+              <div class="about-overview-icon">🏢</div>
+              <h3 class="about-overview-title">Our Company</h3>
+              <p class="about-overview-desc">
+                Established in 1993, FIL-SINO Manpower Services Inc. has been a
+                trusted partner in overseas employment for over 30 years.
+              </p>
+              <div class="about-overview-arrow">→</div>
+            </div>
+
+            <!-- Mission Card -->
+            <div
+              class="about-overview-card animate-on-scroll delay-200"
+              onclick="openSubCard('mission')"
+            >
+              <div class="about-overview-icon">🎯</div>
+              <h3 class="about-overview-title">Our Mission</h3>
+              <p class="about-overview-desc">
+                To provide quality manpower services and connect Filipino talent
+                with global opportunities while ensuring ethical recruitment
+                practices.
+              </p>
+              <div class="about-overview-arrow">→</div>
+            </div>
+
+            <!-- Vision Card -->
+            <div
+              class="about-overview-card animate-on-scroll delay-300"
+              onclick="openSubCard('vision')"
+            >
+              <div class="about-overview-icon">👁️</div>
+              <h3 class="about-overview-title">Our Vision</h3>
+              <p class="about-overview-desc">
+                To be the leading manpower services company in the Philippines,
+                recognized for excellence and integrity in overseas employment.
+              </p>
+              <div class="about-overview-arrow">→</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Overlay -->
+        <div class="modal-overlay" onclick="closeSubCard()"></div>
+
+        <!-- Sub Cards -->
+        <div id="sub-card-company" class="sub-card">
+          <div class="sub-card-header">
+            <h3 class="sub-card-title">Our Company</h3>
+            <button class="sub-card-close" onclick="closeSubCard()">×</button>
+          </div>
+          <img
+            src="assets/images/About_Company.png"
+            alt="Our Company"
+            class="sub-card-image"
+          />
+          <div class="sub-card-content">
+            <p>
+              FIL-SINO Manpower Services Inc. was established in 1993 with the
+              vision of connecting Filipino talent with global opportunities.
+              Over the past three decades, we have built a reputation for
+              excellence in overseas employment services.
+            </p>
+            <p>
+              Our company is fully licensed by the Philippine Overseas
+              Employment Administration (POEA) with License No. 191-LB-070518-R,
+              ensuring that all our operations comply with government
+              regulations and international standards.
+            </p>
+            <p>
+              We specialize in placing skilled Filipino workers in various
+              industries including healthcare, construction, information
+              technology, hospitality, and manufacturing across different
+              countries worldwide.
+            </p>
+          </div>
+        </div>
+
+        <div id="sub-card-mission" class="sub-card">
+          <div class="sub-card-header">
+            <h3 class="sub-card-title">Our Mission</h3>
+            <button class="sub-card-close" onclick="closeSubCard()">×</button>
+          </div>
+          <img
+            src="assets/images/About_Mission.jpg"
+            alt="Our Mission"
+            class="sub-card-image"
+          />
+          <div class="sub-card-content">
+            <p>
+              Our mission is to provide comprehensive and ethical manpower
+              services that bridge the gap between Filipino talent and
+              international employment opportunities.
+            </p>
+            <p>We are committed to:</p>
+            <ul style="margin-left: 1.5rem; margin-top: 1rem">
+              <li>Ensuring fair and transparent recruitment processes</li>
+              <li>Providing pre-departure training and orientation</li>
+              <li>
+                Maintaining strong relationships with international employers
+              </li>
+              <li>
+                Supporting our workers throughout their overseas employment
+              </li>
+              <li>
+                Upholding the highest standards of professionalism and integrity
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div id="sub-card-vision" class="sub-card">
+          <div class="sub-card-header">
+            <h3 class="sub-card-title">Our Vision</h3>
+            <button class="sub-card-close" onclick="closeSubCard()">×</button>
+          </div>
+          <img
+            src="assets/images/About_Vision.jpg"
+            alt="Our Vision"
+            class="sub-card-image"
+          />
+          <div class="sub-card-content">
+            <p>
+              Our vision is to be recognized as the premier manpower services
+              company in the Philippines, setting the standard for excellence in
+              overseas employment.
+            </p>
+            <p>We envision a future where:</p>
+            <ul style="margin-left: 1.5rem; margin-top: 1rem">
+              <li>
+                Filipino workers are globally recognized for their skills and
+                professionalism
+              </li>
+              <li>
+                International employers trust us as their preferred recruitment
+                partner
+              </li>
+              <li>
+                Our services contribute to the economic growth of the
+                Philippines
+              </li>
+              <li>
+                We continue to innovate and adapt to changing global employment
+                trends
+              </li>
+              <li>
+                Every placement we make creates lasting positive impact for all
+                stakeholders
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery Section -->
+      <section id="gallery" class="gallery-section">
+        <div class="container">
+          <h2 class="gallery-title animate-on-scroll">Our Gallery</h2>
+          <div class="gallery-divider"></div>
+          <p class="gallery-desc animate-on-scroll">
+            Take a look at our facilities, training programs, and successful
+            deployments of Filipino workers worldwide.
+          </p>
+
+          <div class="gallery-grid">
+            <div class="gallery-item animate-on-scroll">
+              <img
+                src="assets/images/filsino_gallery/image_1.jpg"
+                alt="Training Facility"
+              />
+            </div>
+            <div class="gallery-item animate-on-scroll delay-200">
+              <img
+                src="assets/images/filsino_gallery/image_2.jpg"
+                alt="Orientation Program"
+              />
+            </div>
+            <div class="gallery-item animate-on-scroll delay-300">
+              <img
+                src="assets/images/filsino_gallery/image_3.jpg"
+                alt="Deployed Workers"
+              />
+            </div>
+            <div class="gallery-item animate-on-scroll">
+              <img
+                src="assets/images/filsino_gallery/image_4.jpg"
+                alt="Success Stories"
+              />
+            </div>
+            <div class="gallery-item animate-on-scroll delay-200">
+              <img
+                src="assets/images/filsino_gallery/image_5.jpg"
+                alt="Training Sessions"
+              />
+            </div>
+            <div class="gallery-item animate-on-scroll delay-300">
+              <img
+                src="assets/images/filsino_gallery/image_6.jpg"
+                alt="Certification Programs"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="services-section">
+        <div class="container">
+          <h2 class="services-title animate-on-scroll">Our Services</h2>
+          <div class="services-divider"></div>
+          <p class="services-desc animate-on-scroll">
+            Comprehensive manpower services designed to meet the diverse needs
+            of international employers and Filipino workers.
+          </p>
+
+          <div class="services-grid">
+            <!-- Healthcare Workers -->
+            <div class="service-card animate-on-scroll">
+              <div class="service-icon">🏥</div>
+              <h3 class="service-title">Healthcare Workers</h3>
+              <p class="service-desc">
+                Skilled nurses, caregivers, medical technicians, and healthcare
+                professionals for hospitals and medical facilities worldwide.
+              </p>
+            </div>
+
+            <!-- Construction Workers -->
+            <div class="service-card animate-on-scroll delay-200">
+              <div class="service-icon">🏗️</div>
+              <h3 class="service-title">Construction Workers</h3>
+              <p class="service-desc">
+                Experienced construction workers, engineers, architects, and
+                skilled tradespeople for major infrastructure projects.
+              </p>
+            </div>
+
+            <!-- IT Professionals -->
+            <div class="service-card animate-on-scroll delay-300">
+              <div class="service-icon">💻</div>
+              <h3 class="service-title">IT Professionals</h3>
+              <p class="service-desc">
+                Software developers, system administrators, network engineers,
+                and IT specialists for technology companies globally.
+              </p>
+            </div>
+
+            <!-- Hospitality Staff -->
+            <div class="service-card animate-on-scroll">
+              <div class="service-icon">🏨</div>
+              <h3 class="service-title">Hospitality Staff</h3>
+              <p class="service-desc">
+                Hotel managers, chefs, waiters, housekeeping staff, and
+                hospitality professionals for the tourism industry.
+              </p>
+            </div>
+
+            <!-- Manufacturing Workers -->
+            <div class="service-card animate-on-scroll delay-200">
+              <div class="service-icon">🏭</div>
+              <h3 class="service-title">Manufacturing Workers</h3>
+              <p class="service-desc">
+                Factory workers, machine operators, quality control specialists,
+                and production supervisors for manufacturing plants.
+              </p>
+            </div>
+
+            <!-- Skilled Trades -->
+            <div class="service-card animate-on-scroll delay-300">
+              <div class="service-icon">🔧</div>
+              <h3 class="service-title">Skilled Trades</h3>
+              <p class="service-desc">
+                Electricians, plumbers, welders, mechanics, and other skilled
+                tradespeople for various industrial applications.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact-section">
+        <div class="container">
+          <div class="contact-header animate-on-scroll">
+            <h2 class="contact-title">Contact Us</h2>
+            <div class="contact-divider"></div>
+            <p class="contact-desc">
+              Ready to start your journey to international employment? Get in
+              touch with our experienced team today.
+            </p>
+          </div>
+
+          <div class="contact-form-wrap">
+            <form class="contact-form animate-on-scroll" id="contactForm">
+              <div class="contact-form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name</label>
+                  <input
+                    type="text"
+                    id="firstName"
+                    name="firstName"
+                    class="form-input"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name</label>
+                  <input
+                    type="text"
+                    id="lastName"
+                    name="lastName"
+                    class="form-input"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="contact-form-row">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="form-input"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    class="form-input"
+                    required
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="service">Service Interest</label>
+                <select id="service" name="service" class="form-input" required>
+                  <option value="">Select a service</option>
+                  <option value="healthcare">Healthcare Workers</option>
+                  <option value="construction">Construction Workers</option>
+                  <option value="it">IT Professionals</option>
+                  <option value="hospitality">Hospitality Staff</option>
+                  <option value="manufacturing">Manufacturing Workers</option>
+                  <option value="trades">Skilled Trades</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  class="form-input"
+                  rows="5"
+                  placeholder="Tell us about your needs or questions..."
+                  required
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn-primary btn-block">
+                Send Message
+                <svg
+                  class="btn-icon-arrow"
+                  width="20"
+                  height="20"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M13 7l5 5m0 0l-5 5m5-5H6"
+                  ></path>
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-company">
+            <div class="footer-logo">
+              <img
+                src="assets/images/Filsino_Logo_front.png"
+                alt="Filsino Logo"
+              />
+              <span class="footer-company-name">FIL-SINO</span>
+            </div>
+            <p class="footer-company-desc">
+              Leading manpower services company connecting Filipino talent with
+              global opportunities. Licensed by POEA for overseas employment
+              since 1993.
+            </p>
+            <div class="footer-socials">
+              <a href="#" class="social-link">📘</a>
+              <a href="#" class="social-link">📱</a>
+              <a href="#" class="social-link">✉️</a>
+            </div>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-title">Services</h3>
+            <ul class="footer-links">
+              <li>
+                <a href="#services" class="footer-link">Healthcare Workers</a>
+              </li>
+              <li>
+                <a href="#services" class="footer-link">Construction Workers</a>
+              </li>
+              <li>
+                <a href="#services" class="footer-link">IT Professionals</a>
+              </li>
+              <li>
+                <a href="#services" class="footer-link">Hospitality Staff</a>
+              </li>
+              <li>
+                <a href="#services" class="footer-link"
+                  >Manufacturing Workers</a
+                >
+              </li>
+              <li>
+                <a href="#services" class="footer-link">Skilled Trades</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-title">Company</h3>
+            <ul class="footer-links">
+              <li><a href="#about" class="footer-link">About Us</a></li>
+              <li>
+                <a href="partners.html" class="footer-link">Our Partners</a>
+              </li>
+              <li><a href="#gallery" class="footer-link">Gallery</a></li>
+              <li><a href="#contact" class="footer-link">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-column">
+            <h3 class="footer-title">Contact Info</h3>
+            <ul class="footer-links">
+              <li class="footer-link">📍 Philippines</li>
+              <li class="footer-link">📞 +63 XXX XXX XXXX</li>
+              <li class="footer-link">✉️ info@filsino.com</li>
+              <li class="footer-link">🏢 POEA Lic. No. 191-LB-070518-R</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Newsletter Signup -->
+        <div class="footer-newsletter">
+          <h3 class="newsletter-title">Stay Updated</h3>
+          <p class="newsletter-desc">
+            Get the latest job opportunities and company news delivered to your
+            inbox.
+          </p>
+          <form class="newsletter-form" id="newsletterForm">
+            <input
+              type="email"
+              placeholder="Enter your email address"
+              required
+              class="newsletter-input"
+            />
+            <button type="submit" class="btn-primary-small">Subscribe</button>
+          </form>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright">
+          <p>
+            &copy; 2024 FIL-SINO Manpower Services Inc. All rights reserved. |
+            POEA License No. 191-LB-070518-R
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top">
+      <svg
+        width="24"
+        height="24"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M5 10l7-7m0 0l7 7m-7-7v18"
+        ></path>
+      </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- HTML Contact Form Handler -->
+    <script>
+      // Simple contact form handler for HTML version
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const formData = new FormData(this);
+          const data = Object.fromEntries(formData.entries());
+
+          // Show success message
+          showNotification(
+            `Thank you, ${data.firstName}! Your message has been received. We'll get back to you soon.`,
+            "success"
+          );
+
+          // Reset form
+          this.reset();
+        });
+
+      // Newsletter form handler
+      document
+        .getElementById("newsletterForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+          const email = this.querySelector('input[type="email"]').value;
+          showNotification(
+            `Thank you for subscribing with ${email}!`,
+            "success"
+          );
+          this.reset();
+        });
+
+      // Simple notification function for HTML version
+      function showNotification(message, type = "info") {
+        const notification = document.createElement("div");
+        let bgColor = "#3b82f6"; // blue
+        if (type === "success") bgColor = "#16a34a"; // green
+        if (type === "error") bgColor = "#ef4444"; // red
+
+        notification.style.cssText = `
+          position: fixed;
+          top: 1rem;
+          right: 1rem;
+          z-index: 50;
+          padding: 1rem;
+          border-radius: 0.5rem;
+          box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+          background-color: ${bgColor};
+          color: white;
+          transform: translateX(100%);
+          transition: transform 0.3s ease;
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          max-width: 400px;
+        `;
+
+        notification.innerHTML = `
+          <span>${message}</span>
+          <button onclick="this.parentElement.remove()" style="background: none; border: none; color: white; cursor: pointer; padding: 0.25rem;">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        `;
+
+        document.body.appendChild(notification);
+
+        // Slide in
+        setTimeout(() => {
+          notification.style.transform = "translateX(0)";
+        }, 100);
+
+        // Auto remove after 5 seconds
+        setTimeout(() => {
+          notification.style.transform = "translateX(100%)";
+          setTimeout(() => {
+            notification.remove();
+          }, 300);
+        }, 5000);
+      }
+    </script>
+  </body>
+</html>
